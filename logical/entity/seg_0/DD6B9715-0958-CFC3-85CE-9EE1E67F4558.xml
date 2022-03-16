@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD6B9715-0958-CFC3-85CE-9EE1E67F4558" name="BEBIDAS">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:09:03 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_bebida" id="7426EDCA-D9E2-ED45-9880-BFE0B1010066">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:09:10 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_consumacao" id="098D74E9-7487-CE74-E432-C19EAF5F3C9C">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:53:59 UTC</createdTime>
+<generatorID>FE8D2E51-09ED-E192-CAE9-8F3002049EED</generatorID>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<referedAttribute>69EF1FA8-3B41-1B2C-34EF-046D087D34B6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_bebida" id="B62D56B4-1367-4DDE-231B-68768190AA89">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:11:09 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_bebida" id="8E731292-5AE9-E50A-E40F-DE2188240B0E">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:26:36 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BBD4FBF5-F268-1B06-32B6-B6E95B2C1752" name="BEBIDAS PK">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:12:03 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7426EDCA-D9E2-ED45-9880-BFE0B1010066</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

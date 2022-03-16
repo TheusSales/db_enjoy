@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B46D19D-7A4B-5D27-2ACD-47A63DE6C3E3" name="ESTABELECIMENTO">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:34:00 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_estabelecimento" id="09FC22A1-0349-7180-7B49-3AE656A57DBF">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:34:08 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_consumacao" id="380E0100-0C22-0987-E9BE-E2044E093D99">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:37:31 UTC</createdTime>
+<generatorID>59375DA3-D2EC-E46A-9C44-815FA82A6B8F</generatorID>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<referedAttribute>69EF1FA8-3B41-1B2C-34EF-046D087D34B6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_estabelecimento" id="F29790C4-8490-5D60-71BD-6CF5C81D236B">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:34:13 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_endereco" id="84105D8A-8C3B-8835-27CE-90609530E5E0">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:59:25 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="69B7FDCA-C10C-F0C3-F527-8CDE05CDB5FE" name="ESTABELECIMENTO PK">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-15 23:38:34 UTC</createdTime>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>09FC22A1-0349-7180-7B49-3AE656A57DBF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
