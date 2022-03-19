@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D4AD8136-A4C9-3F5F-56FD-135DB00DAA6D" name="CONSUMACAO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D4AD8136-A4C9-3F5F-56FD-135DB00DAA6D" name="T_CONSUMACAO">
 <createdBy>matheus</createdBy>
 <createdTime>2022-03-15 23:06:39 UTC</createdTime>
 <ownerDesignName>db_enjoy</ownerDesignName>
@@ -22,20 +22,26 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nr_celular" id="83172514-3BE7-AEDA-72D1-AA29CAD3DB68">
+<Attribute name="id_consumidor" id="6B8EC81B-446E-17A0-02E2-41726111690C">
 <createdBy>matheus</createdBy>
-<createdTime>2022-03-15 23:33:39 UTC</createdTime>
+<createdTime>2022-03-16 23:17:38 UTC</createdTime>
 <generatorID>97F24B5F-7669-0637-3DF5-6EFFE5A74DA6</generatorID>
 <ownerDesignName>db_enjoy</ownerDesignName>
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<referedAttribute>503B510A-4E6E-9210-F000-C863E848F160</referedAttribute>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<referedAttribute>571B264E-549C-905C-687D-EA049E32D84E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="dt_consumacao" id="77C1BC04-8C16-2F3D-BE4C-BBBB60DAC857">
 <createdBy>matheus</createdBy>
@@ -44,7 +50,9 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="vl_total" id="51DFA333-2DFE-3D98-EB1C-21066107C51F">
@@ -54,7 +62,26 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_estabelecimento" id="EBD8815C-A9B2-D748-997F-5AAE71682F9F">
+<createdBy>matheus</createdBy>
+<createdTime>2022-03-19 16:49:12 UTC</createdTime>
+<generatorID>64F2CDBE-2100-3004-8A8E-957FF054366D</generatorID>
+<ownerDesignName>db_enjoy</ownerDesignName>
+<engineerTo>
+<item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
+</engineerTo>
+<referedAttribute>09FC22A1-0349-7180-7B49-3AE656A57DBF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

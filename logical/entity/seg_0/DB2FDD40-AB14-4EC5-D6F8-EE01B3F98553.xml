@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB2FDD40-AB14-4EC5-D6F8-EE01B3F98553" name="ENDERECO_CONSUMIDOR">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB2FDD40-AB14-4EC5-D6F8-EE01B3F98553" name="T_ENDERECO_CONSUMIDOR">
 <createdBy>matheus</createdBy>
 <createdTime>2022-03-15 22:30:28 UTC</createdTime>
 <ownerDesignName>db_enjoy</ownerDesignName>
@@ -22,19 +22,25 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nr_celular" id="1BF19045-0CD9-82FE-6ADF-3E352154C42B">
+<Attribute name="id_consumidor" id="34C7EB88-A383-E7A6-8371-5D0ED28A9019">
 <createdBy>matheus</createdBy>
-<createdTime>2022-03-15 23:36:50 UTC</createdTime>
+<createdTime>2022-03-16 23:17:38 UTC</createdTime>
 <generatorID>5EE97268-5337-F97A-7AEA-DCEA72486757</generatorID>
 <ownerDesignName>db_enjoy</ownerDesignName>
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<referedAttribute>503B510A-4E6E-9210-F000-C863E848F160</referedAttribute>
-<use>0</use>
+<referedAttribute>571B264E-549C-905C-687D-EA049E32D84E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nr_cep" id="549182BE-A80C-6F68-759E-27B77C303EC9">
@@ -44,8 +50,11 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nm_estado" id="E309B0F9-25A0-587D-0A51-B279C63F5804">
 <createdBy>matheus</createdBy>
@@ -54,8 +63,11 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ds_bairro" id="C1A4CB43-ED4C-CDCD-A010-20ED1CF3FE7C">
 <createdBy>matheus</createdBy>
@@ -64,8 +76,11 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nm_rua" id="76D06714-3F6F-0550-7281-273AE6A3157A">
 <createdBy>matheus</createdBy>
@@ -74,8 +89,11 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nr_residencia" id="CEE775F8-0523-385F-6A3E-8F2A1710118C">
 <createdBy>matheus</createdBy>
@@ -84,8 +102,11 @@
 <engineerTo>
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ds_complemento" id="07BCA4C6-CC61-E388-0EF0-25E9765C03B5">
 <createdBy>matheus</createdBy>
@@ -95,8 +116,11 @@
 <item key="A781FAA7-DD02-0FBD-183D-686DDE9F4C2A" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
