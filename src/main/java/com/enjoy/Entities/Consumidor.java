@@ -1,12 +1,17 @@
 package com.enjoy.Entities;
 
 import java.util.Calendar;
+import java.util.Collection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -34,7 +39,7 @@ public class Consumidor extends EntityDefault {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sq_consumidor")
 	@Column(name = "id_consumidor")
 	private int id = 0;
-
+	
 	@Column(name = "nr_celular", length = 60, nullable = false)
 	private String nr_celular = "";
 
@@ -50,6 +55,15 @@ public class Consumidor extends EntityDefault {
 
 	@Column(name = "ds_email", length = 50, nullable = false)
 	private String ds_email = "";
+	
+	
+	@OneToOne(cascade=CascadeType.PERSIST)
+	@JoinColumn(name="cd_endereco", nullable=false)
+	private EnderecoConsumidor endereco_consumidor = null;
+	
+	@OneToMany(mappedBy = "consumidor", cascade=CascadeType.PERSIST)
+	@JoinColumn(name="cd_consumacao", nullable=false)
+	private Collection<Consumacao> consumacao = null;
 
 	public int getId() {
 		return id;
@@ -98,5 +112,23 @@ public class Consumidor extends EntityDefault {
 	public void setDs_email(String ds_email) {
 		this.ds_email = ds_email;
 	}
+
+	public EnderecoConsumidor getEndereco_consumidor() {
+		return endereco_consumidor;
+	}
+
+	public void setEndereco_consumidor(EnderecoConsumidor endereco_consumidor) {
+		this.endereco_consumidor = endereco_consumidor;
+	}
+
+	public Collection<Consumacao> getConsumacao() {
+		return consumacao;
+	}
+
+	public void setConsumacao(Collection<Consumacao> consumacao) {
+		this.consumacao = consumacao;
+	}
+	
+	
 
 }

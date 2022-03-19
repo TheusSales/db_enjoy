@@ -1,10 +1,13 @@
 package com.enjoy.Entities;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -47,7 +50,10 @@ public class EnderecoConsumidor extends EntityDefault {
 
 	@Column(name = "nr_residencia", length = 6, nullable = false)
 	private int nr_residencia = 0;
-
+	
+	@OneToOne(mappedBy = "endereco_consumidor")
+	private Consumidor consumidor;
+	
 	public int getCd_endereco() {
 		return cd_endereco;
 	}
@@ -96,4 +102,12 @@ public class EnderecoConsumidor extends EntityDefault {
 		this.nr_residencia = nr_residencia;
 	}
 
+	public Consumidor getConsumidor() {
+		return consumidor;
+	}
+
+	public void setConsumidor(Consumidor consumidor) {
+		this.consumidor = consumidor;
+	}
+	
 }

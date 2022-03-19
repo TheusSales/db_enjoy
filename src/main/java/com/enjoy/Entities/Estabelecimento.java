@@ -1,11 +1,14 @@
 package com.enjoy.Entities;
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -13,9 +16,8 @@ import javax.persistence.Table;
 @Table(name = "T_ESTABELECIMENTO")
 public class Estabelecimento extends EntityDefault {
 	
-	public Estabelecimento(int id, String nr_estabelecimento, String ds_endereco) {
+	public Estabelecimento(String nr_estabelecimento, String ds_endereco) {
 		super();
-		this.id = id;
 		this.nr_estabelecimento = nr_estabelecimento;
 		this.ds_endereco = ds_endereco;
 	}
@@ -35,6 +37,9 @@ public class Estabelecimento extends EntityDefault {
 
 	@Column(name = "ds_endereco", length = 50, nullable = false)
 	private String ds_endereco = "";
+	
+	@OneToOne(mappedBy="estabelecimento", cascade=CascadeType.PERSIST,orphanRemoval=true)
+	private Consumacao consumacao;
 
 	public int getId() {
 		return id;
@@ -58,6 +63,14 @@ public class Estabelecimento extends EntityDefault {
 
 	public void setDs_endereco(String ds_endereco) {
 		this.ds_endereco = ds_endereco;
+	}
+
+	public Consumacao getConsumacao() {
+		return consumacao;
+	}
+
+	public void setConsumacao(Consumacao consumacao) {
+		this.consumacao = consumacao;
 	}
 	
 	
