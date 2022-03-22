@@ -6,20 +6,22 @@
 
     <persistence-unit name="enjoy">
         <class>com.enjoy.Entities.Consumidor</class>
-        <class>com.enjoy.Entities.EnderecoConsumidor</class>
+        <class>com.enjoy.Entities.Endereco</class>
         <class>com.enjoy.Entities.Consumacao</class>
         <class>com.enjoy.Entities.Estabelecimento</class>
-        <class>com.enjoy.Entities.Bebidas</class>
+        <class>com.enjoy.Entities.Bebida</class>
+        <class>com.enjoy.Entities.ConsumacaoBebida</class>
         <!-- <exclude-unlisted-classes>true</exclude-unlisted-classes> -->
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <property name="show_sql" value="true" />
-            <property name="format_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <!--<property name="hibernate.show_sql" value="true" /> -->
+            <!-- <property name="hibernate.format_sql" value="true" /> -->
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe"/>
             <property name="javax.persistence.jdbc.user" value="system"/>
-            <property name="javax.persistence.jdbc.password" value="123"/>
+            <property name="javax.persistence.jdbc.password" value="semsenha"/>
+            <!-- <property name="javax.persistence.jdbc.password" value="123"/> -->
         </properties>
     </persistence-unit>
 
