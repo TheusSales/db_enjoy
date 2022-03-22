@@ -11,6 +11,7 @@
         <class>com.enjoy.Entities.Estabelecimento</class>
         <class>com.enjoy.Entities.Bebida</class>
         <class>com.enjoy.Entities.ConsumacaoBebida</class>
+        <class>com.enjoy.Entities.TipoBebidas</class>
         <!-- <exclude-unlisted-classes>true</exclude-unlisted-classes> -->
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
