@@ -15,6 +15,7 @@ import com.enjoy.Entities.Consumidor;
 import com.enjoy.Entities.Endereco;
 import com.enjoy.Entities.EntityDefault;
 import com.enjoy.Entities.Estabelecimento;
+import com.enjoy.Entities.TipoBebida;
 import com.enjoy.Entities.Enums.EstadosEnum;
 
 public class InsertTest {

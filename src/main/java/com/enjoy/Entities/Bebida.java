@@ -14,8 +14,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import com.enjoy.Tests.TipoBebida;
-
 @Entity
 @Table(name="T_BEBIDA")
 public class Bebida extends EntityDefault {

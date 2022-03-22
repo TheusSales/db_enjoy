@@ -1,4 +1,4 @@
-package com.enjoy.Tests;
+package com.enjoy.Entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,8 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
-
-import com.enjoy.Entities.EntityDefault;
 
 @Entity(name="T_TIPOBEBIDA")
 public class TipoBebida extends EntityDefault {
